@@ -8,6 +8,10 @@
   background: #ffffff;
 }
 
+.sidenav-content {
+  margin: 5rem 4rem 4rem 4rem;
+}
+
 img {
   width: 100%;
   height: 7rem;
@@ -31,4 +35,8 @@ img {
     rgb(117, 119, 122) 0%,
     rgb(211, 225, 228) 100%
   );
+}
+
+h1 {
+  padding: 1rem 10%;
 }

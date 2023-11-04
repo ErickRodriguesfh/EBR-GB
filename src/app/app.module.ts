@@ -6,11 +6,10 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { SharedModule } from './shared/shared.module';
-import { ListarComponent } from './livros/components/listar/listar.component';
 import { HomeComponent } from './home/components/home.component';
 
 @NgModule({
-  declarations: [AppComponent, ListarComponent, HomeComponent],
+  declarations: [AppComponent, HomeComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
