@@ -1,0 +1,10 @@
+.form-item {
+  width: 100%;
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}

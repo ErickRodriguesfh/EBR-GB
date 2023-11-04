@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Livro } from '../../model/livro';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogComponent } from '../dialog/dialog.component';
 
 const livros: Livro[] = [
   {
@@ -42,6 +44,12 @@ const livros: Livro[] = [
   styleUrls: ['./livro.component.css'],
 })
 export class LivroComponent {
+  constructor(public dialog: MatDialog) {}
+
+  openDialog() {
+    this.dialog.open(DialogComponent);
+  }
+
   displayedColumns: string[] = [
     'codigo',
     'titulo',

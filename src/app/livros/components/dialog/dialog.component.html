@@ -1,0 +1,33 @@
+<h2 mat-dialog-title>Cadastrar Livro</h2>
+
+<mat-dialog-content class="mat-typography">
+  <mat-form-field class="form-item">
+    <mat-label>Título</mat-label>
+    <input matInput />
+  </mat-form-field>
+
+  <mat-form-field class="form-item">
+    <mat-label>Autor</mat-label>
+    <input matInput />
+  </mat-form-field>
+
+  <mat-form-field class="form-item">
+    <mat-label>Quantidade de Páginas</mat-label>
+    <input matInput type="number" />
+  </mat-form-field>
+
+  <div class="select" class="form-item">
+    <mat-form-field>
+      <mat-label>Gêneros</mat-label>
+      <mat-select>
+        <mat-option *ngFor="let genero of generos" [value]="genero">
+          {{ genero }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="botoes">
+    <button mat-raised-button color="primary">Cadastrar</button>
+    <button mat-stroked-button color="warn">Cancelar</button>
+  </div>
+</mat-dialog-content>
