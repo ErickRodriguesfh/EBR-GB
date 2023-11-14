@@ -57,6 +57,7 @@ export class LivroComponent {
     'autor',
     'genero',
     'dataPublicacao',
+    'acoes',
   ];
 
   dataSource = livros;

@@ -5,3 +5,8 @@
 .demo-button + .demo-button {
   margin-left: 8px;
 }
+
+.botoes {
+  display: flex;
+  gap: 5px;
+}
